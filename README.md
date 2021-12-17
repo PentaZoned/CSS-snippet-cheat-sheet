@@ -37,6 +37,8 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 * **Baofeng Guo**
 
+- [Link to Github](https://github.com/magickw)
+- [Link to LinkedIn](https://www.linkedin.com/in/bfguo/) 
 
 ## License
 
