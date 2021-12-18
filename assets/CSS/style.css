@@ -1,27 +1,120 @@
 body {
-    color: #bb0e9e;
+    background-color: rgb(51, 52, 58);
+    color: white;
+    min-height: 100%;
+    line-height: 1;
+    font-family: sans-serif;
+}
+
+header {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 h1 {
-    text-align: center;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
-.code {
-    margin-left: 10px;
+.row {
     display: flex;
-    color: white;
-    font-family: monospace;
-    line-height: 1.5;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 
+repeat(12, 1fr);
+}
+
+.linear-gradient-background {
+    background-image: linear-
+gradient(
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, .6) 100%
+    );
+}
+.code-card, .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-
+out;
+}
+
+.code-card:hover,
+.code-card:hover, .card-header {
+    box-shadow: inset 0px 0px 8px
+rgba(232, 102, 236, 1), 0 0 15px
+rgba(232, 102, 236, 1);
+}
+
+.card-header {
+    position: relative;
+    margin-top: -20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+}
+
 :root {
     --cardbg: rgb(232, 103, 237);
     --background: rgb(51, 57, 64);
 }
 
-* {
-    box-sizing: border-box;
+footer {
+    text-align: center;
 }
 
-html {
-    display: block;
+
+
+@media (max-width:768px){
+    .card{
+        width: 100%;
+    }
+}
+
+@media (max-width:992px){
+    .card{
+        width: 50%;
+    }
+}
+
+@media (max-width:768px){
+    main {
+        display:grid;
+        width:100%;
+    }
+}
+
+
+@media (max-width:992px){
+
+    main {
+        display:grid;
+        width:100%;
+        grid-template-columnns: repeat (2, auto); 
+    }
+}
+
+
+@media (min-width: 993px) {
+   .card {
+       width:30%;
 }
