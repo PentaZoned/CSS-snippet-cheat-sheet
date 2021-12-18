@@ -1,46 +1,27 @@
 body {
-    color: #39FF14;
+    color: #bb0e9e;
 }
 
 h1 {
     text-align: center;
 }
 
-.row {
+.code {
+    margin-left: 10px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    color: white;
+    font-family: monospace;
+    line-height: 1.5;
+}
+:root {
+    --cardbg: rgb(232, 103, 237);
+    --background: rgb(51, 57, 64);
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
+* {
+    box-sizing: border-box;
 }
 
-.grid {
-    display: grid;
-    width: 100%;
-    grid-template-columns:
-repeat(12, 1fr);
-}
-
-.linear-gradient-background {
-    background-image: linear-gradient(
-        rgba(232, 102, 236, 0, 3) 0%,
-        rgba(232, 102, 236, 0, 6) 0%
-        );
-}
-
-.code-card .card-header {
-    border-radius: 8px;
-    transition: all 0.5s ease -iniout;
-}
-
-.code-card:hover, .card-header:hover, .card-hearder {
-    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
-}
-
-.card-header {
-    position: relative;
-    margin-top: -20px;
+html {
+    display: block;
 }
