@@ -1,31 +1,60 @@
 * {
     box-sizing: border-box;
-  }
+}
+
+:root {
+    --textcolor: #87ceeb;
+}
 
 body {
     background-color: rgb(51, 52, 58);
     color: white;
+    margin: 0;
 }
-  
-  
+
 main {
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 1;
-    justify-content: center;
+    flex-direction: row;
 }
   
-header h1 {
-    font-size: 45px;
-    color: rgb(212, 54, 212);
+h1 {
+    font-size: 28pt;
+    text-align: center;
+    color: var(--textcolor);
+    padding-top: 20px;
+}
+
+h2 {
+    font-size: 1px;
+    color: var(--textcolor);
     text-align: center;
     padding: 30px;
 }
+
+p {
+    text-align: center;
+    padding: 20px;
+    color: var(--textcolor);
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+.card {
+    padding: 20px;
+    border: 2px dashed white;
+    margin: 20px;
+    width: 500px;
+}
+
 .card-header {
     width: 65%;
     font-size: 180%;
     font-weight: bold;
-    color: rgb(212, 54, 212);
+    color: var(--textcolor);
     padding: 10px;
     position: relative;
     left: 15%;
@@ -46,30 +75,17 @@ section div {
   
 }
 
-.code-card, .card-header {
-    border-radius: 8px;
-    transition: all 0.5s ease-in-
-out;
-}
-
 .code-card:hover,
-.code-card:hover, .card-header {
+.code-card:hover .card-header {
     box-shadow: inset 0px 0px 8px
 rgba(232, 102, 236, 1), 0 0 15px
 rgba(232, 102, 236, 1);
 }
 
-.card-header {
-    position: relative;
-    margin-top: -20px;
-}
-
-
-footer {
+#content-text {
     text-align: center;
+    color: var(--textcolor);
 }
-
-
 
 @media screen and (max-width:768px){
     .card{
@@ -82,3 +98,11 @@ footer {
         width: 50%;
     }
 }
+
+/*
+.code-card, .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+*/
