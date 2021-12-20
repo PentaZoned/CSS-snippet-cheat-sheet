@@ -17,6 +17,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
 }
 
 h1 {
@@ -27,7 +28,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1px;
+    font-size: 24px;
     color: var(--textcolor);
     text-align: var(--text-align);
     padding: 30px;
@@ -35,14 +36,13 @@ h2 {
 
 p {
     text-align: var(--text-align);
-    padding: 20px;
+    padding: 0px 20px;
     color: var(--textcolor);
     margin-bottom: 20px;
 }
 
-code:active {
-    background-color: cyan;
-    color: black;
+code {
+    user-select: all;
 }
 
 footer {
@@ -52,14 +52,13 @@ footer {
 .card {
     padding: 0px 20px 20px 20px;
     border: 2px dashed white;
-    margin: 20px;
-    width: 594px;
-    justify-content: space-evenly;
+    margin: 30px 15px;
+    width: 24%;
+    justify-content: center;
 }
 
 .card-header {
     width: 65%;
-    font-size: 180%;
     font-weight: bold;
     color: var(--textcolor);
     padding: 10px;
@@ -74,14 +73,10 @@ footer {
     text-align: var(--text-align);
 }
 
-section div {
+.code-card {
     padding: 20px;
     border-radius: 20px;
     background-image: linear-gradient(rgba(233, 133, 233, 0.3) 0%, rgba(238, 37, 238, 0.6) 100%);
-}
-
-.tab {
-    margin-left: 25px;
 }
 
 .code-card:hover,
@@ -95,7 +90,20 @@ section div {
     transition: all 0.5s ease-in-out;
 }
 
-#content-text {
-    text-align: var(--text-align);
-    color: var(--textcolor);
+@media screen and (max-width: 767px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .card {
+        width: 27%;
+    }
 }
