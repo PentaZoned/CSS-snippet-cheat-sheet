@@ -13,7 +13,7 @@
 <body>
     <header>
         <h1>CSS Snippet Cheatsheet</h1>
-        <p >
+        <p>
             Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add
             it to this page. Select any snippet below and it'll automatically select all of the code for you to copy.
         </p>
@@ -25,10 +25,10 @@
             <p id="content-text">Use these three properties to create a Flexbox row layout.</p>
             <div class="code-card">
                 <code>
-                    .row {<br>
-                    display: flex;<br>
-                    flex-direction: row;<br>
-                    flex-wrap: wrap;<br>
+                    .row {<br/>
+                    <span class="tab">display: flex;<br/></span>
+                    <span class="tab">flex-direction: row;<br/></span>
+                    <span class="tab">flex-wrap: wrap;<br/></span>
                     }
                 </code>
             </div>
@@ -39,9 +39,9 @@
             <p id="content-text">Use this to create a flexbox column layout.</p>
             <div class="code-card">
                 <code>
-                    .column {<br>
-                    display: flex;<br>
-                    flex-direction: column;<br>
+                    .column {<br/>
+                    <span class="tab">display: flex;<br/></span>
+                    <span class="tab">flex-direction: column;<br/></span>
                     }
                 </code>
             </div>
@@ -52,27 +52,26 @@
             <p>Build a 12-colum layout using CSS Grid.</p>
             <div class="code-card">
                 <code>
-                    .grid {<br>
-                    display: grid;<br>
-                    width: 100%;<br>
-                    grid-template-columns: <br>
-                    repeat(12, 1fr);<br>
+                    .grid {<br/>
+                        <span class="tab">display: grid;<br/></span>
+                        <span class="tab">width: 100%;<br/></span>
+                        <span class="tab">grid-template-columns: <br/></span>
+                        <span class="tab">repeat(12, 1fr);<br/></span>
                     }
                 </code>
             </div>
 
         </section>
+
         <section class="card">
             <h2 class="card-header">Linear Gradients</h2>
             <p>This will create a background linear gradient from top to bottom.</p>
             <div class="code-card">
                 <code>
-                    .linear-gradient-background {<br>
-                    background-image: linear-
-                    gradient(<br>
-                    rgba(232, 102, 236, 0.3) 0%,
-                    rgba(232, 102, 236, .6) 100%<br>
-                    );<br>
+                    .linear-gradient-background {<br/>
+                        <span class="tab">background-image: linear-gradient(
+                        rgba(232, 102, 236, 0.3) 0%,</span>
+                        <span class="tab">rgba(232, 102, 236, .6) 100%);</span><br/>
                     }
                 </code>
             </div>
@@ -83,17 +82,16 @@
             <p>Use transition and box shadows to glow on hover.</p>
             <div class="code-card">
                 <code>
-                    .code-card .card-header {<br>
-                    border-radius: 8px;<br>
-                    transition: all 0.5s ease-in-
-                    out;<br>
-                    }<br>
-
-                    .code-card:hover,<br>
-                    .code-card:hover .card-header {<br>
-                    box-shadow: inset 0px 0px 8px
-                    rgba(232, 102, 236, 1), 0 0 15px
-                    rgba(232, 102, 236, 1);<br>
+                    .code-card .card-header {<br/>
+                        <span class="tab">border-radius: 8px;</span><br/>
+                        <span class="tab">transition: all 0.5s ease-in-out;</span><br/>
+                    }<br/><br/>
+                    
+                    .code-card:hover,<br/>
+                    .code-card:hover .card-header {<br/>
+                        <span class="tab">box-shadow: inset 0px 0px 8px
+                        rgba(232, 102, 236, 1), 0 0 15px</span>
+                        <span class="tab">rgba(232, 102, 236, 1);</span><br/>
                     }
                 </code>
             </div>
@@ -105,19 +103,18 @@
                 than their natural starting point.</p>
             <div class="code-card">
                 <code>
-                    .card-header {<br>
-                    position: relative;<br>
-                    margin-top: -20px;<br>
+                    .card-header {<br/>
+                        <span class="tab">position: relative;</span><br/>
+                        <span class="tab">margin-top: -20px;</span><br/>
                     }
                 </code>
             </div>
-
         </section>
 
-
     </main>
+
     <footer>
-        <h1>Made with <a>❤️</a> and CSS</h1>
+        <h1>Made with HTML, CSS, and <a>❤️</a></h1>
     </footer>
 </body>
 
